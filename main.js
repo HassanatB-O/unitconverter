@@ -14,4 +14,7 @@ function save() {
     
     document.getElementById("pounds").textContent = userInput + " pounds = " + (userInput * 0.453592).toFixed(3) + " kilos";
     
+    document.getElementById("ms").textContent = userInput + " m/s = " + (userInput * 3.6).toFixed(3) + " km/h";
+    
+    document.getElementById("kmh").textContent = userInput + " km/h = " + (userInput * 0.278).toFixed(3) + " m/s";
 }
