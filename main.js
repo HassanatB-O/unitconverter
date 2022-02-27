@@ -2,7 +2,7 @@
 input = document.getElementById("input");
 var makeConversion = function() {    
     userInput = input.value;
-    document.getElementById("meters").textContent = userInput + " meters = " + (userInput * 3.38084).toFixed(3) + " feet";
+    document.getElementById("meters").textContent = userInput + " meters = " + (userInput * 3.28084).toFixed(3) + " feet";
 
     document.getElementById("feet").textContent = userInput + " feet = " + (userInput * 0.3048).toFixed(3) + " meters";
     
