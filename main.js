@@ -1,6 +1,5 @@
 
 function save() {
-    let userInput = 0;
     userInput = document.getElementById("input").value;
     document.getElementById("meters").textContent = userInput + " meters = " + (userInput * 3.38084).toFixed(3) + " feet";
 
