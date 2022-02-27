@@ -1,6 +1,7 @@
 
-function save() {
-    userInput = document.getElementById("input").value;
+input = document.getElementById("input");
+var makeConversion = function() {    
+    userInput = input.value;
     document.getElementById("meters").textContent = userInput + " meters = " + (userInput * 3.38084).toFixed(3) + " feet";
 
     document.getElementById("feet").textContent = userInput + " feet = " + (userInput * 0.3048).toFixed(3) + " meters";
@@ -17,3 +18,7 @@ function save() {
     
     document.getElementById("kmh").textContent = userInput + " km/h = " + (userInput * 0.278).toFixed(3) + " m/s";
 }
+
+ // this is to add an event listener for the input, instead of using the save button
+input.addEventListener('change', makeConversion);
+input.addEventListener('keyup', makeConversion);
