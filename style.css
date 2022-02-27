@@ -3,7 +3,7 @@ body{
     color: white;
     text-align: center;
     margin: 0;
-    height: 100vh;
+    overflow-y: auto;
 }
 #head p, #head h1, p.one{
     margin: 0;
@@ -12,8 +12,10 @@ input{
     font-size: 30px;
     font-weight: 400;
     border: none;
+    width: 100px;
     border-radius: 7px;
     cursor: pointer;
+    box-sizing: content-box;
 }
 button{
     padding: 7px;
